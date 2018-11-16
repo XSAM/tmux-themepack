@@ -60,5 +60,5 @@ set -g message-command-bg default
 set -g message-command-fg default
 
 # Mode
-set -g mode-bg red
-set -g mode-fg default
+set -g mode-bg brightblack
+set -g mode-fg colour46
