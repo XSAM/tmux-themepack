@@ -18,8 +18,8 @@ set -g status-right-length 40
 set -g status-right "#H #[fg=white]"
 
 # Window status
-set -g window-status-format " #I:#W#F "
-set -g window-status-current-format " #I:#W#F "
+set -g window-status-format ' #I:#(pwd="#{pane_current_path}"; echo ${pwd####*/}) (#{pane_current_command}) '
+set -g window-status-current-format ' #I:#(pwd="#{pane_current_path}"; echo ${pwd####*/}) (#{pane_current_command}) '
 
 # Current window status
 set -g window-status-current-bg green
