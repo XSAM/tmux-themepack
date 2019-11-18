@@ -10,12 +10,16 @@ set -g status-left-bg default
 set -g status-left-fg green
 set -g status-left-length 40
 set -g status-left "#[fg=green]#S #[fg=white]» #[fg=yellow]#I #[fg=cyan]#P"
+# For higher version
+set -g status-left-sytle bg=default,fg=green
 
 # Right side of status bar
 set -g status-right-bg default
 set -g status-right-fg cyan
 set -g status-right-length 40
 set -g status-right "#H #[fg=white]"
+# For higher version
+set -g status-right-sytle bg=default,fg=cyan
 
 # Window status
 set -g window-status-format ' #I:#(pwd="#{pane_current_path}"; echo ${pwd####*/}) (#{pane_current_command})#F '
@@ -24,10 +28,14 @@ set -g window-status-current-format ' #I:#(pwd="#{pane_current_path}"; echo ${pw
 # Current window status
 set -g window-status-current-bg green
 set -g window-status-current-fg black
+# For higher version
+set -g window-status-current-style bg=green,fg=black
 
 # Window with activity status
 set -g window-status-activity-bg yellow # fg and bg are flipped here due to a
 set -g window-status-activity-fg black  # bug in tmux
+# For higher version
+set -g window-status-activity-style bg=yellow,fg=black
 
 # Window separator
 set -g window-status-separator ""
@@ -38,10 +46,14 @@ set -g status-justify centre
 # Pane border
 set -g pane-border-bg default
 set -g pane-border-fg brightblack
+# For higher version
+set -g pane-border-style bg=default,fg=brightblack
 
 # Active pane border
 set -g pane-active-border-bg default
 set -g pane-active-border-fg brightblue
+# For higher version
+set -g pane-active-border-style bg=default,fg=brightblue
 
 # Pane number indicator
 set -g display-panes-colour default
@@ -54,11 +66,17 @@ set -g clock-mode-style 24
 # Message
 set -g message-bg default
 set -g message-fg default
+# For higher version
+set -g message-style bg=default,fg=default
 
 # Command message
 set -g message-command-bg default
 set -g message-command-fg default
+# For higher version
+set -g message-command-style bg=default,fg=default
 
 # Mode
 set -g mode-bg brightblack
 set -g mode-fg colour46
+# For higher version
+set -g mode-style bg=brightblack,fg=colour46
