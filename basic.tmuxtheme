@@ -9,7 +9,7 @@ set -g status-fg cyan
 set -g status-left-bg default
 set -g status-left-fg green
 set -g status-left-length 40
-set -g status-left "#[fg=green]#S #[fg=white]» #[fg=yellow]#I #[fg=cyan]#P"
+set -g status-left "#[fg=green]#S #[fg=white]» #[fg=yellow]#I #[fg=cyan]#P "
 # For higher version
 set -g status-left-sytle bg=default,fg=green
 
